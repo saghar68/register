@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+{% block title %}Login{% endblock title %}
+
+{% block context %}
+
+<br>
+<div class='container'>
+    <h1>Login form:</h1>
+    <br>
+    <form method='Post'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary">send</button>
+    </form>
+
+</div>
+
+{% endblock context %}
+
+
+
+
